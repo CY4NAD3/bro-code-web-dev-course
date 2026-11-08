@@ -13,10 +13,56 @@
   Use GET for search/filter/read; POST for login/register/upload/orders.
   Never put passwords in GET (they end up in URL, history, logs).
 -->
-    <form action="index.php" method="POST">
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+        <label for="username">username:</label>
+        <input id="username" name="username" type="text" placeholder="SpongeBob" minlength="6" maxlength="15" autofocus><br>
 
-        <input>
+        <label for="password">password:</label>
+        <input id="password" name="password" type="password" minlength="6" maxlength="15"><br>
 
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" placeholder="ssquarepants@gmail.com"><br>
+
+        <label for="phone">phone #:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+        <label for="bday">birthdate:</label>
+        <input type="date" id="bday" name="bday"><br>
+
+        <label for="quantity">quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="99" value="1"><br>
+
+        <label>title:</label>
+
+        <label for="Mr.">Mr.</label>
+        <input type="radio" name="title" id="Mr." value="Mr." checked>
+        <label for="Ms.">Ms.</label>
+        <input type="radio" name="title" id="Ms." value="Ms.">
+        <label><input type="radio" name="title" value="PhD.">PhD.</label>
+        <br>
+
+        <label for="payment">payment:</label>
+        <select id="payment" name="payment">
+            <option value="" selected disabled>-- Select payment --</option>
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+        </select><br>
+
+        <label for="subscribe">subscribe:</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="notification">notification:</label>
+        <input type="checkbox" id="notification" name="notification"><br>
+
+        <label for="comment">comment:</label>
+        <textarea id="comment" rows="3" cols="25" name="comment"></textarea><br>
+
+        <label for="file">file:</label>
+        <input type="file" id="file" name="file" accept="image/png, image/jpeg"><br>
+
+        <br><br>
+        <input type="reset">
+        <input type="submit">
     </form>
 </body>
 </html>
