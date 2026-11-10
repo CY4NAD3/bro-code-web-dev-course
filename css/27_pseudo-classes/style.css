@@ -1,0 +1,41 @@
+a:link{
+    color:rgb(3, 157, 246)
+}
+a:hover{
+    color: rgb(97, 206, 227);
+    font-size: 1.1em;
+}
+a:visited{
+    color: grey;
+}
+a:active{
+    color: orange;
+    font-size: 1.1em;
+}
+
+/*
+a:link    { color: blue; }   unvisited link
+a:visited { color: purple; }    link the user has already visited
+a:hover   { color: red; }       mouse is over the link
+a:active  { color: orange; }    link is being clicked (mouse button held down)
+*/
+
+li:hover{
+    background-color: yellow;
+}
+li:not(:hover){
+    background-color: green;
+}
+
+li:nth-child(odd){ /*3n, 3n+2*/
+    background-color: red;
+}
+
+#greeting p{
+    background-color: aqua;
+    padding: 10px;
+    display: none;
+}
+#greeting:hover p{
+    display: block;
+}

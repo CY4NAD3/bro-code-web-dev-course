@@ -1,0 +1,29 @@
+.icons{
+    text-align: center;
+}
+
+.icons a{
+    text-decoration: none;
+    margin: 20px;
+}
+
+.fa-house   { color: hsl(0, 0%, 57%); }
+.fa-twitter { color: hsl(203, 89%, 53%); }
+.fa-youtube { color: hsl(0, 100%, 50%); }
+.fa-tiktok  { color: hsl(0, 0%, 0%); }
+
+.fa-house   { color: hsl(0, 0%, 57%); }
+.fa-twitter { color: hsl(203, 89%, 53%); }
+.fa-youtube { color: hsl(0, 100%, 50%); }
+.fa-tiktok  { color: hsl(0, 0%, 0%); }
+
+/* smooth colour change */
+.fa-house, .fa-twitter, .fa-youtube, .fa-tiktok {
+  transition: color 0.3s ease;
+}
+
+/* lighter on hover */
+.fa-house:hover   { color: hsl(0, 0%, 72%); }
+.fa-twitter:hover { color: hsl(203, 89%, 68%); }
+.fa-youtube:hover { color: hsl(0, 100%, 65%); }
+.fa-tiktok:hover  { color: hsl(0, 0%, 30%); }
